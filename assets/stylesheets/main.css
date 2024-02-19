@@ -1,0 +1,310 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 2. v2.0 | 20110126
+  License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+
+
+
+/*
+  ========================================
+  Grid
+  ========================================
+*/
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+
+
+/*
+  ========================================
+  Top Header
+  ========================================
+*/
+
+html {
+ font-size: 16px;
+ font-family: 'Open Sans', sans-serif;
+}
+
+header {
+  background: url("images/pic2.jpg");
+  background-size:100% 100%;
+  background-repeat: no-repeat;
+  padding-bottom: 6%;
+  color: rgb(255, 249, 246);
+  font-family: 'Montserrat', sans-serif;
+  padding-top: 2%;
+}
+
+header h1 {
+  font-size: 4rem;
+  margin-bottom: 7%;
+  margin-top: 9%;
+  line-height: 6rem;
+  text-align: center;
+}
+
+
+nav {
+    display: flex;
+}
+
+.topHeaderNav {
+    font-size: 1rem;
+    justify-content: flex-end;
+    margin-right: 3%;
+}
+
+.topHeaderNav li {
+    margin-right: 4%;
+    list-style: none;
+}
+
+.bottomHeaderNav  li{
+    margin-right: 3%;
+    font-size: 1.345rem;
+    list-style: none:
+}
+
+
+.myContainer {
+    margin-left: 6%;
+}
+
+.socialMedia {
+    margin-left: 14%;
+}
+
+/*
+  ========================================
+  Mid Section
+  ========================================
+*/
+
+.allAboutUs {
+  background: url(images/pic3.webp);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  color: rgb(255, 249, 246);
+  padding-bottom: 20%;
+}
+
+
+
+
+.allAboutUs > h3 {
+  padding-top: 5%;
+  margin-left: 3.555%;
+  font-weight: 700;
+}
+
+.allAboutUs > h1 {
+  margin-right: 25%;
+  margin-left: 3.445%;
+  font-weight: 900;
+  font-size: 3rem;
+  width: 25%;
+}
+
+.btn {
+  border-radius: 3%;
+  color: #fff;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 0.585rem;
+  padding: 1% 2.333%;
+  margin-left: 3%;
+  border: .1333rem solid #fff;
+  letter-spacing: .1222rem;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #fff;
+  color: #648880;
+}
+
+
+.ourIntroduction {
+  margin-top: -10%;
+  margin-left: 69%;
+  font-size: .7777rem;
+  line-height: 1.115rem;
+  width: 29%;
+}
+
+/*
+  ========================================
+  Third section/Information Section
+  ========================================
+*/
+
+.menuSection {
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.menuSection > h3, .menuSection > h1 {
+  text-align: center;
+}
+
+.menuSection > h3 {
+  margin-top: 3%;
+  font-weight: 700;
+}
+
+
+.menuSection > h1 {
+  font-size: 2.774rem;
+  font-weight: 700;
+}
+
+.specialtyNavigation > ul {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+  padding-left: 3%;
+  font-size: 1.333rem;
+  width: 100%;
+}
+
+ .specialtyNavigation ul li {
+  text-align: center;
+  font-weight: 600;
+  line-height: 4rem;
+ }
+
+.menuImages {
+  display: flex;
+  justify-content: space-between;
+}
+
+.menuBurger {
+  height: 9rem;
+  width: 12rem;
+}
+
+/*
+  ========================================
+  Advertising and Information Section
+  ========================================
+*/
+
+.lastMainSection {
+  margin-top: 3%;
+
+}
+
+.adSaying {
+  height: 25rem;
+  width: 35rem;
+}
+
+
+
+.lastMainSection {
+  display: flex;
+  margin-left: 4%;
+}
+
+
+
+.lastMainSection > .openingInfo > h1 {
+  font-size: 1.888rem;
+  font-weight: 600;
+}
+
+.lastMainSection > .openingInfo > h4 {
+  font-size: 1rem;
+  margin-bottom: 1.445rem;
+}
+
+
+
+.lastMainSection > .openingInfo > h3 {
+  font-size: 2rem;
+  font-weight: 900;
+}
+
+
+
+.bigger {
+  font-size: 2.444rem;
+  font-weight: 900;
+}
+
+.eggBrain {
+  font-size: 2.445rem;
+}
+
+/*
+  ========================================
+  Customers Say Section
+  ========================================
+*/
+
+.theFinalBottomSection > h4 {
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.theFinalBottomSection > h1 {
+  text-align: center;
+  font-weight: 700;
+}
+
+video {
+  height: 30rem;
+  width: 45rem;
+  margin-left: 21.335%;
+}
