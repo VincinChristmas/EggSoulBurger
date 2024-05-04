@@ -211,7 +211,7 @@ nav {
 
 .specialtyNavigation > ul {
   display: flex;
-  margin-bottom: 1rem;
+  margin-bottom: 1%;
   padding-left: 3%;
   font-size: 1.333rem;
   
@@ -226,8 +226,8 @@ nav {
 
 
 .menuImages {
-  height: 9rem;
-  width: 12rem;
+  width: 90%;
+  height: 60%;
 }
 
 /*
@@ -242,8 +242,8 @@ nav {
 }
 
 .adSaying {
-  height: 25rem;
-  width: 35rem;
+  height: 35%;
+  width: 45%;
 }
 
 
@@ -300,30 +300,7 @@ nav {
 }
 
 video {
-  height: 30rem;
-  width: 45rem;
-  margin-left: 21.335%;
+  width: 50%;
+  margin-left: 24%;
 }
 
-@media all and (max-width: 1097px) {
-
-    .menuImages {
-    display: none;
-  }
-
-  .specialtyNavigation > ul {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 1rem;
-    padding-left: 3%;
-    font-size: 1.333rem;
-    
-  }
-
-  .specialtyNavigation ul li {
-    
-    border: 3px solid yellow;
-    font-weight: 600;
-    line-height: 4rem;
-   }
-}
