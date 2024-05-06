@@ -102,11 +102,11 @@ nav {
 .topHeaderNav {
     font-size: 1rem;
     justify-content: flex-end;
-    margin-right: 3%;
+    margin-right: 2%;
 }
 
 .topHeaderNav li {
-    margin-right: 4%;
+    width: 100%;
     list-style: none;
 }
 
@@ -114,6 +114,12 @@ nav {
     margin-right: 3%;
     font-size: 1.345rem;
     list-style: none:
+}
+
+.topLinks {
+  color: white;
+  text-decoration: none;
+  margin-right: 3%
 }
 
 
