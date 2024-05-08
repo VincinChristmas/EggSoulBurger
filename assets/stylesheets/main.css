@@ -229,6 +229,11 @@ nav {
   line-height: 4rem;
  }
 
+ .specialtyNavigation ul li a {
+  text-decoration: none;
+  color: black;
+ }
+
 
 
 .menuImages {
@@ -310,3 +315,15 @@ video {
   margin-left: 24%;
 }
 
+/*
+  ========================================
+  Drinks Menu Page
+  ========================================
+*/
+
+.drinkImage {
+  height: 2000px;
+  background-size: cover;
+    background-position: center;
+  overflow: hidden;
+}
