@@ -324,6 +324,6 @@ video {
 .drinkImage {
   height: 2000px;
   background-size: cover;
-    background-position: center;
+  background-position: center;
   overflow: hidden;
 }
