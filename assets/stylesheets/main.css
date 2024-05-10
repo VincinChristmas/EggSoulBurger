@@ -77,7 +77,7 @@ html {
 }
 
 header {
-  background: url("images/pic2.jpg");
+  background: url("image/pic2.jpg");
   background-size:100% 100%;
   background-repeat: no-repeat;
   padding-bottom: 6%;
@@ -138,7 +138,7 @@ nav {
 */
 
 .allAboutUs {
-  background: url(images/pic3.webp);
+  background: url(image/pic3.webp);
   background-size: 100% 100%;
   background-repeat: no-repeat;
   color: rgb(255, 249, 246);
