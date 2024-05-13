@@ -321,4 +321,22 @@ video {
   ========================================
 */
 
+.drinksTitle {
+  text-align: center;
+  color: #CDCDCF;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 4rem;
+}
+
+.drinksBox {
+  text-align: center;
+}
+
+.drinkspageImage {
+width: 30%;
+}
+
+.drinkspageImage:hover {
+  transform: scale(1.10);
+}
 
