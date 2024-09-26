@@ -13,97 +13,110 @@
     <title>Egg Soul</title>
 </head>
 <body>
-
-    <!--The top section-->
-    <header>
-        <nav class="topHeaderNav">
-            <a class="topLinks" href="index.html"><li>Home</li></a>
-            <a class="topLinks" href="aboutUs.html"><li>About Us</li></a>
-            <a class="topLinks" href="menu.html"><li>Menu</li></a>
-            <a class="topLinks" href="blog.html"><li>Blog</li></a>
-            <a class="topLinks" href="location.html"><li>Location</li></a>
+    <!--Start of top header-->
+    <header class="header">
+        <nav class="header__nav header__nav--top">
+            <a class="header__link" href="index.html"><li>Home</li></a>
+            <a class="header__link" href="aboutUs.html"><li>About Us</li></a>
+            <a class="header__link" href="menu.html"><li>Menu</li></a>
+            <a class="header__link" href="blog.html"><li>Blog</li></a>
+            <a class="header__link" href="location.html"><li>Location</li></a>
         </nav>
-        <h1 class="myContainer">Egg Soul <br>It's soul-lickin good!</h1>
-        <nav class="bottomHeaderNav myContainer">
-            <li class="fa fa-facebook"><span class="socialMedia">250k</span></li>
-            <li class="fa fa-twitter"><span class="socialMedia">90k</span></li>
-            <li class="fa fa-instagram"><span class="socialMedia">400k</span></li>
+        <h1 class="header__title">Egg Soul <br>It's soul-lickin good!</h1>
+        <nav class="header__nav header__nav--bottom">
+            <li class="header__social-item fa fa-facebook"><span class="header__social-count">250k</span></li>
+            <li class="header__social-item fa fa-twitter"><span class="header__social-count">90k</span></li>
+            <li class="header__social-item fa fa-instagram"><span class="header__social-count">400k</span></li>
         </nav>
     </header>
+<!--End of top header-->
 
-    <!--The Middle-About Us Section-->
-    <section class="allAboutUs">
-
-        <h3>About Us</h3>
-        <h1>Discover our story</h1>
-        <p class="ourIntroduction">We are a restaurant chain that specializes in burgers, egg burgers, and egg sandwiches. We originated from Nanjing,
+<!--Start of About Us-->
+    <section class="about">
+        <h3 class="about__subtitle">About Us</h3>
+        <h1 class="about__title">Discover our story</h1>
+        <p class="about__description">We are a restaurant chain that specializes in burgers, egg burgers, and egg sandwiches. We originated from Nanjing,
             the capital city of Jiangsu province in China, and also have two locations in Shanghai as well. Eggsoul is known
             for our tall American-style burgers with eggs, as well as our fast-casual dining environment.
             If you are looking for a place to enjoy some hearty and delicious food in Nanjing, you might want to check out Eggsoul.
        </p>
-        <a class="btn btn-alt" href="register.html">OUR MENU</a>
-
+        <a class="about__button button button--alt" href="register.html">OUR MENU</a>
     </section>
+<!--End of About Us-->
 
-    <!--Third Section/Menu Section-->
-    <section class="menuSection">
-        <h3>Come to our location</h3>
-        <h1>Our Specialty</h1>
-        <nav class="specialtyNavigation">
-            <ul>
-                
-                <li><a href="burgers.html">Burgers
-                <img  class="menuImages" src="assets/stylesheets/image/pic23.jpg">
-                </a>
+
+<!--Start of the Menu Section-->
+    <section class="menu">
+        <h3 class="menu__subtitle">Come to our location</h3>
+        <h1 class="menu__title">Our Specialty</h1>
+        <nav class="menu__nav">
+            <ul class="menu__list">
+                <li class="menu__item">
+                    <a class="menu__link" href="burgers.html">
+                        Burgers
+                        <img class="menu__image" src="assets/stylesheets/image/pic23.jpg" alt="Burger">
+                    </a>
                 </li>
-                
-                
-                    
-                <li><a href="fries.html">Fries
-                <img  class="menuImages" src="assets/stylesheets/image/pic6.jpg">
-                </a>
+                <li class="menu__item">
+                    <a class="menu__link" href="fries.html">
+                        Fries
+                        <img class="menu__image" src="assets/stylesheets/image/pic6.jpg" alt="Fries">
+                    </a>
                 </li>
-
-                <li><a href="chicken.html">Chicken
-                <img  class="menuImages" src="assets/stylesheets/image/chickenmenuone.jpg">
-                </a>
+                <li class="menu__item">
+                    <a class="menu__link" href="chicken.html">
+                        Chicken
+                        <img class="menu__image" src="assets/stylesheets/image/chickenmenuone.jpg" alt="Chicken">
+                    </a>
                 </li>
-
-                <li><a href="drinks.html">Drinks
-                <img  class="menuImages" src="assets/stylesheets/image/drinkpicone.jpg">
-                </a>
+                <li class="menu__item">
+                    <a class="menu__link" href="drinks.html">
+                        Drinks
+                        <img class="menu__image" src="assets/stylesheets/image/drinkpicone.jpg" alt="Drinks">
+                    </a>
                 </li>
-
-
-                <li><a href="">Combos
-                <img  class="menuImages" src="assets/stylesheets/image/pic21.jpg">
-                </a>
+                <li class="menu__item">
+                    <a class="menu__link" href="combos.html">
+                        Combos
+                        <img class="menu__image" src="assets/stylesheets/image/pic21.jpg" alt="Combos">
+                    </a>
                 </li>
             </ul>
         </nav>
     </section>
+    <!--end of the Menu Section-->
 
-     <!--Advertising and Information Section-->
-     <section class="lastMainSection">
-        <img class="adSaying" src="assets/stylesheets/image/adsayingtwo.jpg">
-        <div class="openingInfo">
-        <h1>Opening Hours</h1>
-        <h4 class="leftMore">Every day</h4>
-        <h3 class="leftMore">10:00am - 10:00pm</h3>
-        <h4 class="leftMore">call now</h4>
-        <h2 class="leftMore bigger">+86-800-828-9568</h2>
-        <h2 class="leftMore eggBrain">Come down and egg your brain !</h2>
+  
+
+     
+     <!--Start of Ad Section-->
+     <section class="ad">
+         <div class="ad__content">
+             <img class="ad__image" src="assets/stylesheets/image/adsayingtwo.jpg" alt="Ad Saying">
+             <div class="ad__info">
+                 <h2 class="ad__title">Opening Hours</h2>
+                 <p class="ad__schedule">Every day</p>
+                 <p class="ad__hours">10:00am - 10:00pm</p>
+                 <p class="ad__call-to-action">Call now</p>
+                 <p class="ad__phone-number">+86-800-828-9568</p>
+                 <p class="ad__slogan">Come down and egg your brain!</p>
+             </div>
+         </div>
+     </section>
+     <!--End of Ad Section-->
+     
+
+    <!--Start of customers section-->
+    <section class="testimonials">
+        <h4 class="testimonials__subtitle">Testimonials</h4>
+        <h1 class="testimonials__title">Customers Say</h1>
+        <div class="testimonials__video-container">
+            <video class="testimonials__video" controls>
+                <source src="assets/stylesheets/image/eggsoulvideo.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
         </div>
     </section>
-
-    <!--Customers Say Section-->
-    <section class="theFinalBottomSection">
-        <h4>Testimonials</h4>
-        <h1>Customers Say</h1>
-        <video controls src="assets/stylesheets/image/eggsoulvideo.mp4" type="video/mp4"></video>
-        
-
-
-    </section>
+    <!--end of customers section-->
 </body>
 </html>

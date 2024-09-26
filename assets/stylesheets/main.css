@@ -1,84 +1,19 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 2. v2.0 | 20110126
-  License: none (public domain)
-*/
-
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-  display: block;
-}
-body {
-  line-height: 1;
-}
-ol, ul {
-  list-style: none;
-}
-blockquote, q {
-  quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-  content: '';
-  content: none;
-}
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
 
 
 
 /*
   ========================================
-  Grid
+  Start of Top Header
   ========================================
 */
-
-*,
-*:before,
-*:after {
-  -webkit-box-sizing: border-box;
-     -moz-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
-
-
-/*
-  ========================================
-  Top Header
-  ========================================
-*/
-
 html {
  font-size: 16px;
  font-family: 'Open Sans', sans-serif;
 }
 
-header {
+.header {
   background: url("image/pic2.jpg");
-  background-size:100% 100%;
+  background-size: 100% 100%;
   background-repeat: no-repeat;
   padding-bottom: 6%;
   color: rgb(255, 249, 246);
@@ -86,265 +21,481 @@ header {
   padding-top: 2%;
 }
 
-header h1 {
+.header__nav {
+  display: flex;
+}
+
+.header__nav--top {
+  font-size: 1rem;
+  justify-content: flex-end;
+  margin-right: 2%;
+}
+
+.header__link {
+  color: white;
+  text-decoration: none;
+  margin-right: 3%;
+}
+
+.header__nav--bottom {
+  margin-left: 6%;
+}
+
+.header__social-item {
+  margin-right: 3%;
+  font-size: 1.345rem;
+  list-style: none;
+}
+
+.header__social-count {
+  margin-left: 14%;
+}
+
+.header__title {
   font-size: 4rem;
   margin-bottom: 7%;
   margin-top: 9%;
   line-height: 6rem;
   text-align: center;
 }
-
-
-nav {
-    display: flex;
-}
-
-.topHeaderNav {
-    font-size: 1rem;
-    justify-content: flex-end;
-    margin-right: 2%;
-}
-
-.topHeaderNav li {
-    width: 100%;
-    list-style: none;
-}
-
-.bottomHeaderNav  li{
-    margin-right: 3%;
-    font-size: 1.345rem;
-    list-style: none:
-}
-
-.topLinks {
-  color: white;
-  text-decoration: none;
-  margin-right: 3%
-}
-
-
-.myContainer {
-    margin-left: 6%;
-}
-
-.socialMedia {
-    margin-left: 14%;
-}
-
 /*
   ========================================
-  Mid Section
+  End of Top Header
   ========================================
 */
 
-.allAboutUs {
-  background: url(image/pic3.webp);
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-  color: rgb(255, 249, 246);
-  padding-bottom: 20%;
+
+
+
+/*
+  ========================================
+  Start of About Us
+  ========================================
+*/
+.about {
+  color: #ffffff;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  background: url(image/pic3.webp) no-repeat center center;
+  background-size: cover;
+  padding: 5% 0;
+  position: relative;
 }
 
+.about::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
 
+.about__content {
+  position: relative;
+  z-index: 2;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
+.about__text {
+  width: 50%;
+}
 
-.allAboutUs > h3 {
-  padding-top: 5%;
-  margin-left: 3.555%;
+.about__subtitle {
+  font-size: 1.2rem;
   font-weight: 700;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
 }
 
-.allAboutUs > h1 {
-  margin-right: 25%;
-  margin-left: 3.445%;
-  font-weight: 900;
+.about__title {
   font-size: 3rem;
-  width: 25%;
+  font-weight: 900;
+  margin-bottom: 2rem;
+  line-height: 1.2;
+  position: relative;
+  z-index: 2;
 }
 
-.btn {
-  border-radius: 3%;
-  color: #fff;
-  cursor: pointer;
-  font-weight: 700;
-  font-size: 0.585rem;
-  padding: 1% 2.333%;
-  margin-left: 3%;
-  border: .1333rem solid #fff;
-  letter-spacing: .1222rem;
-  text-decoration: none;
-}
-
-.btn:hover {
-  background: #fff;
-  color: #648880;
-}
-
-
-.ourIntroduction {
-  margin-top: -10%;
-  margin-left: 69%;
-  font-size: .7777rem;
-  line-height: 1.115rem;
-  width: 29%;
-}
-
-/*
-  ========================================
-  Third section/Information Section
-  ========================================
-*/
-
-.menuSection {
-  padding-left: 5%;
-  padding-right: 5%;
-}
-
-.menuSection > h3, .menuSection > h1 {
-  text-align: center;
-}
-
-.menuSection > h3 {
-  margin-top: 3%;
-  font-weight: 700;
-}
-
-
-.menuSection > h1 {
-  font-size: 2.774rem;
-  font-weight: 700;
-}
-
-.specialtyNavigation > ul {
-  display: flex;
-  margin-bottom: 1%;
-  padding-left: 3%;
-  font-size: 1.333rem;
-  
-}
-
- .specialtyNavigation ul li {
-  text-align: center;
-  font-weight: 600;
-  line-height: 4rem;
- }
-
- .specialtyNavigation ul li a {
-  text-decoration: none;
-  color: black;
- }
-
-
-
-.menuImages {
-  width: 90%;
-  height: 60%;
-}
-
-/*
-  ========================================
-  Advertising and Information Section
-  ========================================
-*/
-
-.lastMainSection {
-  margin-top: 3%;
-
-}
-
-.adSaying {
-  height: 35%;
-  width: 45%;
-}
-
-
-
-.lastMainSection {
-  display: flex;
-  margin-left: 4%;
-}
-
-
-
-.lastMainSection > .openingInfo > h1 {
-  font-size: 1.888rem;
-  font-weight: 600;
-}
-
-.lastMainSection > .openingInfo > h4 {
+.about__description {
   font-size: 1rem;
-  margin-bottom: 1.445rem;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+.about__button {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: transparent;
+  color: #fff;
+  border: 2px solid #fff;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+}
+.about__button {
+  position: relative;
+  z-index: 2;
+}
+
+.about__button:hover {
+  background-color: #fff;
+  color: #000;
 }
 
 
+@media (max-width: 768px) {
+  .about__content {
+    flex-direction: column;
+    text-align: center;
+  }
 
-.lastMainSection > .openingInfo > h3 {
+  .about__text {
+    width: 90%;
+    margin-bottom: 2rem;
+  }
+
+  .about__title {
+    font-size: 2.5rem;
+  }
+}
+/*
+  ========================================
+  end of About Us
+  ========================================
+*/
+
+
+/*
+  ========================================
+  Start of menu
+  ========================================
+*/
+.menu {
+  padding: 5% 5%;
+  background-color: #f9f9f9;
+}
+
+.menu__subtitle {
+  text-align: center;
+  color: #888;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 1rem;
+}
+
+.menu__title {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 3rem;
+}
+
+.menu__nav {
+  margin-bottom: 2%;
+}
+
+.menu__list {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 0;
+  list-style-type: none;
+}
+
+.menu__item {
+  flex: 0 1 calc(20% - 20px);
+  margin-bottom: 2rem;
+  transition: transform 0.3s ease;
+}
+
+.menu__item:hover {
+  transform: translateY(-10px);
+}
+
+.menu__link {
+  text-decoration: none;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.menu__image {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1rem;
+}
+
+.menu__link-text {
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .menu__item {
+    flex: 0 1 calc(33.33% - 20px);
+  }
+}
+
+@media (max-width: 480px) {
+  .menu__item {
+    flex: 0 1 calc(50% - 20px);
+  }
+}
+/*
+  ========================================
+  end of menu
+  ========================================
+*/
+
+
+/*
+  ========================================
+  start of Ad
+  ========================================
+*/
+.ad {
+  margin-top: 3%;
+  padding: 2rem;
+}
+
+.ad__content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.ad__image {
+  width: 45%;
+  height: auto;
+  max-width: 500px;
+}
+
+.ad__info {
+  width: 50%;
+}
+
+.ad__title {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.ad__schedule,
+.ad__hours,
+.ad__call-to-action,
+.ad__phone-number,
+.ad__slogan {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+}
+
+.ad__hours,
+.ad__phone-number {
   font-size: 2rem;
   font-weight: 900;
 }
 
-
-
-.bigger {
-  font-size: 2.444rem;
+.ad__call-to-action {
+  font-size: 2.2rem;
   font-weight: 900;
 }
 
-.eggBrain {
-  font-size: 2.445rem;
+.ad__slogan {
+  font-size: 2.2rem;
 }
-
 /*
   ========================================
-  Customers Say Section
+  end of ad
   ========================================
 */
 
-.theFinalBottomSection > h4 {
+
+
+/*
+  ========================================
+  start of Customers Say Section
+  ========================================
+*/
+.testimonials {
+  background-color: #f9f9f9;
+  padding: 6rem 0;
   text-align: center;
-  margin-top: 3rem;
 }
 
-.theFinalBottomSection > h1 {
-  text-align: center;
+.testimonials__subtitle {
+  color: #888;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 1rem;
+}
+
+.testimonials__title {
   font-weight: 700;
+  font-size: 3rem;
+  margin-bottom: 3rem;
+  color: #333;
 }
 
-video {
-  width: 50%;
-  margin-left: 24%;
+.testimonials__video-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
 }
 
+.testimonials__video {
+  width: 80%;
+  max-width: 900px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  transition: transform 0.3s ease;
+}
+
+.testimonials__video:hover {
+  transform: scale(1.02);
+}
 /*
   ========================================
-  Drinks Menu Page
+  end of customers say
   ========================================
 */
 
-.drinksTitle {
+
+
+
+
+  /*========================================
+         Start of Burgers Menu Page
+  ========================================*/
+  .burgerheader {
+    background: url("image/pic30.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    padding-bottom: 6%;
+    color: rgb(255, 249, 246);
+    font-family: 'Montserrat', sans-serif;
+    padding-top: 2%;
+  }
+  
+  .burgerheader__nav {
+    display: flex;
+  }
+  
+  .burgerheader__nav--top {
+    font-size: 1rem;
+    justify-content: flex-end;
+    margin-right: 2%;
+  }
+  
+  .burgerheader__link {
+    color: white;
+    text-decoration: none;
+    margin-right: 3%;
+  }
+  
+  .burgerheader__nav--bottom {
+    margin-left: 6%;
+  }
+  
+  .burgerheader__social-item {
+    margin-right: 3%;
+    font-size: 1.345rem;
+    list-style: none;
+  }
+  
+  .burgerheader__social-count {
+    margin-left: 14%;
+  }
+  
+  .burgerheader__title {
+    font-size: 4rem;
+    margin-bottom: 7%;
+    margin-top: 9%;
+    line-height: 6rem;
+    text-align: center;
+  }
+  
+.burgers {
+  padding: 2rem;
+}
+
+.burgers__title {
   text-align: center;
   color: #CDCDCF;
   font-family: 'Montserrat', sans-serif;
   font-size: 4rem;
+  margin-bottom: 2rem;
 }
 
-.drinksBox {
-  text-align: center;
+.burgers__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
 }
 
-.drinkspageImage {
-width: 30%;
+.burgers__image {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
 }
 
-.drinkspageImage:hover {
-  transform: scale(1.10);
+.burgers__image:hover {
+  transform: scale(1.15);
 }
 
-/*
-  ========================================
+
+
+/*========================================
+         End of  Burgers Menu Page
+  ========================================*/
+
+
+  .drinksTitle {
+    text-align: center;
+    color: #CDCDCF;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 4rem;
+  }
+  
+  .drinksBox {
+    text-align: center;
+  }
+  
+  .drinkspageImage {
+  width: 30%;
+  }
+  
+  .drinkspageImage:hover {
+    transform: scale(1.10);
+  }
+
+
+ /* ========================================
           fries menu page
-  ========================================
-*/
+  ========================================*/
+
 .theFries {
   display: flex;
   flex-direction: column;
@@ -354,4 +505,376 @@ width: 30%;
 .theFries img {
   width: 35%;
 }
+
+
+
+/*=================================================================================================================================================================
+          media queries
+======================================== ==========================================================================================================================*/
+
+
+
+
+/*========================================
+          start of header
+======================================== */
+
+
+@media screen and (max-width: 768px) {
+  .header {
+    padding-top: 4%;
+    padding-bottom: 8%;
+  }
+
+  .header__nav--top {
+    font-size: 0.9rem;
+    margin-right: 1%;
+  }
+
+  .header__link {
+    margin-right: 2%;
+  }
+
+  .header__nav--bottom {
+    margin-left: 4%;
+  }
+
+  .header__social-item {
+    font-size: 1.2rem;
+  }
+
+  .header__social-count {
+    margin-left: 10%;
+  }
+
+  .header__title {
+    font-size: 3rem;
+    margin-bottom: 5%;
+    margin-top: 7%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .header {
+    padding-top: 6%;
+    padding-bottom: 10%;
+  }
+
+  .header__nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .header__nav--top {
+    justify-content: center;
+    margin-right: 0;
+    margin-bottom: 2%;
+  }
+
+  .header__link {
+    margin-right: 4%;
+  }
+
+  .header__nav--bottom {
+    margin-left: 0;
+  }
+
+  .header__social-item {
+    font-size: 1.1rem;
+  }
+
+  .header__social-count {
+    margin-left: 8%;
+  }
+
+  .header__title {
+    font-size: 2.5rem;
+    margin-bottom: 4%;
+    margin-top: 6%;
+    text-align: center;
+  }
+}
+
+/*========================================
+          end of header
+======================================== */
+
+
+
+
+/*
+  ========================================
+  Start of About Us
+  ========================================
+*/
+
+
+@media screen and (max-width: 768px) {
+  .about__content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about__text {
+    width: 90%;
+    margin-bottom: 2rem;
+  }
+
+  .about__title {
+    font-size: 2.5rem;
+  }
+
+  .about__subtitle {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .about {
+    padding: 10% 0;
+  }
+
+  .about__text {
+    width: 95%;
+  }
+
+  .about__title {
+    font-size: 2rem;
+  }
+
+  .about__subtitle {
+    font-size: 0.9rem;
+  }
+}
+
+
+/*========================================
+          end of about us
+======================================== */
+
+
+
+/*
+  ========================================
+  Start of the menu section
+  ========================================
+*/
+
+@media (max-width: 1200px) {
+  .menu__item {
+    flex: 0 1 calc(25% - 20px);
+  }
+}
+
+@media (max-width: 992px) {
+  .menu__item {
+    flex: 0 1 calc(33.33% - 20px);
+  }
+}
+
+@media (max-width: 768px) {
+  .menu {
+    padding: 8% 5%;
+  }
+
+  .menu__title {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .menu__item {
+    flex: 0 1 calc(50% - 20px);
+  }
+}
+
+@media (max-width: 480px) {
+  .menu {
+    padding: 10% 5%;
+  }
+
+  .menu__subtitle {
+    font-size: 1rem;
+  }
+
+  .menu__title {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .menu__item {
+    flex: 0 1 100%;
+  }
+
+  .menu__image {
+    width: 80%;
+    max-width: 250px;
+  }
+}
+
+/*========================================
+          end of menue
+======================================== */
+
+
+
+
+
+
+/*
+  ========================================
+  Start of the add section
+  ========================================
+*/
+
+
+@media (max-width: 992px) {
+  .ad__content {
+    flex-direction: column;
+  }
+
+  .ad__image,
+  .ad__info {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .ad__image {
+    margin-bottom: 2rem;
+  }
+
+  .ad__title {
+    font-size: 2.2rem;
+  }
+
+  .ad__schedule,
+  .ad__hours,
+  .ad__call-to-action,
+  .ad__phone-number,
+  .ad__slogan {
+    font-size: 1.2rem;
+  }
+
+  .ad__hours,
+  .ad__phone-number,
+  .ad__call-to-action,
+  .ad__slogan {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .ad {
+    padding: 1.5rem;
+  }
+
+  .ad__title {
+    font-size: 2rem;
+  }
+
+  .ad__schedule,
+  .ad__hours,
+  .ad__call-to-action,
+  .ad__phone-number,
+  .ad__slogan {
+    font-size: 1.1rem;
+  }
+
+  .ad__hours,
+  .ad__phone-number,
+  .ad__call-to-action,
+  .ad__slogan {
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .ad {
+    padding: 1rem;
+  }
+
+  .ad__title {
+    font-size: 1.8rem;
+  }
+
+  .ad__schedule,
+  .ad__hours,
+  .ad__call-to-action,
+  .ad__phone-number,
+  .ad__slogan {
+    font-size: 1rem;
+  }
+
+  .ad__hours,
+  .ad__phone-number,
+  .ad__call-to-action,
+  .ad__slogan {
+    font-size: 1.4rem;
+  }
+}
+
+/*========================================
+          end of add section
+======================================== */
+
+
+
+
+/*
+  ========================================
+  Start of customers say
+  ========================================
+*/
+
+
+@media (max-width: 768px) {
+  .testimonials {
+    padding: 4rem 0;
+  }
+
+  .testimonials__title {
+    font-size: 2.5rem;
+  }
+
+  .testimonials__video {
+    width: 95%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .testimonials__video {
+    width: 70%;
+  }
+}
+
+/*========================================
+          end of customers say
+======================================== */
+
+/*========================================
+        start of burgers menu
+======================================== */
+@media screen and (max-width: 768px) {
+  .burgers__title {
+    font-size: 3rem;
+  }
+
+  .burgers__grid {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .burgers__title {
+    font-size: 2.5rem;
+  }
+
+  .burgers__grid {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1rem;
+  }
+}
+/*========================================
+          end of burgers menu
+======================================== */
 
